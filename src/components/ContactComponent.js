@@ -27,11 +27,11 @@ class Contact extends Component {
             agree: false,
             contactType: 'By Phone',
             feedback: '',
-             touched: {
-                firstName: false,
-                lastName: false,
-                phoneNum: false,
-                email: false
+            touched:{
+                firstName:false,
+                lastName:false,
+                phoneNum:false,
+                email:false
             }
         };
 
