@@ -85,7 +85,6 @@ class CommentForm extends Component {
             author:'',
             comment:'',
             touched:{
-                rating:false,
                 author:false
             }
 
@@ -134,7 +133,7 @@ class CommentForm extends Component {
                                     <Control.text model=".author" id="yourName" name="yourName"
                                         placeholder="Your Name"
                                         className="form-control"
-                                        defaultValue=""
+                                        defaultValue=""//set default value to empty string. So that order of jason display in as in local form
                                         validators={{
                                             required, 
                                             minLength: minLength(2),
@@ -159,7 +158,7 @@ class CommentForm extends Component {
                                     <Control.textarea model=".comment" id="comment" name="comment"
                                         placeholder="Share your valuable comments"
                                         className="form-control"
-                                        defaultValue=""
+                                        defaultValue="" //set default value to empty string. So that order of jason display in as in local form
                                         rows="6">
                                         </Control.textarea>
                                 </Col>
